@@ -1,12 +1,12 @@
 package com.ll.framework.ioc;
 
-import com.ll.domain.post.post.repository.PostRepository;
-import com.ll.domain.post.post.service.PostService.PostService;
 import com.ll.framework.ioc.annotations.Component;
 import com.ll.standard.util.Ut;
+import lombok.SneakyThrows;
 import org.reflections.Reflections;
 import org.reflections.scanners.Scanners;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -15,22 +15,36 @@ public class ApplicationContext {
     private String basePackage;
     private Reflections reflections;
     private Map<String, BeanDefinition> beanDefinitions;
+    private Map<String, Object> beans;
 
     public ApplicationContext(String basePackage) {
         this.basePackage = basePackage;
+        beans = new HashMap<>();
     }
 
     public void init() {
         reflections = new Reflections(basePackage, Scanners.TypesAnnotated);
         initBeanDefinitions();
+        createBeans();
+    }
+
+    private void createBeans() {
+        beanDefinitions.forEach((beanName, beanDefinition) -> {
+            createBean(beanDefinition);
+        });
+    }
+
+    @SneakyThrows
+    private void createBean(BeanDefinition beanDefinition) {
+        Class<?> cls = beanDefinition.getCls();
+
+        Object bean = cls.newInstance();
+
+        beans.put(beanDefinition.getName(), bean);
     }
 
     public <T> T getBean(String beanName) {
-        if ("postRepository".equals(beanName)) {
-            return (T) new PostRepository();
-        }
-
-        return (T) new PostService();
+        return (T) beans.get(beanName);
     }
 
     public Set<Class<?>> findComponentClasses() {

@@ -1,5 +1,7 @@
 # 작업내역
 
+## 17강 : test(blue) : 리팩토링
+
 ## 16강 : test(blue) : initBeanDefinitions
 
 ## 15강 : test(green) : initBeanDefinitions
