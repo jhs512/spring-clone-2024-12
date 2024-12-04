@@ -1,5 +1,7 @@
 # 작업내역
 
+## 14강 : test(red) : initBeanDefinitions
+
 ## 13강 : test(green) : findComponentClasses
 
 ## 12강 : test(red) : findComponentClasses

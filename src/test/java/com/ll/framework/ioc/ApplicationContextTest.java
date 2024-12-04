@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Map;
 import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -49,5 +50,15 @@ public class ApplicationContextTest {
         assertThat(componentClasses).isNotEmpty();
         assertThat(componentClasses).contains(PostService.class);
         assertThat(componentClasses).contains(PostRepository.class);
+    }
+
+    @Test
+    @DisplayName("initBeanDefinitions")
+    public void t5() {
+        applicationContext.initBeanDefinitions();
+
+        Map<String, BeanDefinition> beanDefinitions = applicationContext.getBeanDefinitions();
+
+        assertThat(beanDefinitions).isNotEmpty();
     }
 }
