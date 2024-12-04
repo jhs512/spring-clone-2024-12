@@ -29,4 +29,12 @@ public class ApplicationContextTest {
 
         assertThat(postService).isNotNull();
     }
+
+    @Test
+    @DisplayName("postRepository")
+    public void t3() {
+        PostRepository postRepository = applicationContext.getBean("postRepository");
+
+        assertThat(postRepository).isNotNull();
+    }
 }
