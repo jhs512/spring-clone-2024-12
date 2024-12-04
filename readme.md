@@ -1,6 +1,8 @@
 # 작업내역
 
-## 10강 : test(blue) : postRepository
+## 11강 : test(green) : postRepository
+
+## 10강 : test(red) : postRepository
 
 ## 9강 : test(blue) : postService
 
