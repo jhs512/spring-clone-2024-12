@@ -47,5 +47,7 @@ public class ApplicationContextTest {
         Set<Class<?>> componentClasses = applicationContext.findComponentClasses();
 
         assertThat(componentClasses).isNotEmpty();
+        assertThat(componentClasses).contains(PostService.class);
+        assertThat(componentClasses).contains(PostRepository.class);
     }
 }

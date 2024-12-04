@@ -1,5 +1,7 @@
 # 작업내역
 
+## 13강 : test(green) : findComponentClasses
+
 ## 12강 : test(red) : findComponentClasses
 
 ## 11강 : test(green) : postRepository
