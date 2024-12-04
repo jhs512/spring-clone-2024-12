@@ -1,5 +1,7 @@
 # 작업내역
 
+## 6강 : 롬복, 잭슨, 리플렉션 의존성 추가
+
 ## 5강 : test(green) : ApplicationContext init
 
 ## 4강 : test(red) : ApplicationContext init
