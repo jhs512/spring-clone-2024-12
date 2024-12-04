@@ -1,5 +1,7 @@
 # 작업내역
 
+## 5강 : test(green) : ApplicationContext init
+
 ## 4강 : test(red) : ApplicationContext init
 
 ## 3강 : Main.java clear
