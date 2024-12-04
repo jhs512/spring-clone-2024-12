@@ -1,5 +1,7 @@
 # 작업내역
 
+## 7강 : assertThat 의존성 추가, test(red) : postService
+
 ## 6강 : 롬복, 잭슨, 리플렉션 의존성 추가
 
 ## 5강 : test(green) : ApplicationContext init
