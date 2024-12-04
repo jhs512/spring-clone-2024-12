@@ -1,5 +1,7 @@
 # 작업내역
 
+## 9강 : test(blue) : postService
+
 ## 8강 : test(green) : postService
 
 ## 7강 : assertThat 의존성 추가, test(red) : postService
