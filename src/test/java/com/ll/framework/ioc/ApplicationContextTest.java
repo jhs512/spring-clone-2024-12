@@ -1,7 +1,10 @@
 package com.ll.framework.ioc;
 
+import com.ll.domain.post.post.service.PostService.PostService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ApplicationContextTest {
     @Test
