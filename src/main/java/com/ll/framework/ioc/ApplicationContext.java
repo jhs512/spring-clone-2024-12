@@ -21,7 +21,8 @@ public class ApplicationContext {
     }
 
     public void init() {
-        this.reflections = new Reflections(basePackage, Scanners.TypesAnnotated);
+        reflections = new Reflections(basePackage, Scanners.TypesAnnotated);
+        initBeanDefinitions();
     }
 
     public <T> T getBean(String beanName) {

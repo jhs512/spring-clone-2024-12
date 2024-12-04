@@ -1,5 +1,7 @@
 # 작업내역
 
+## 16강 : test(blue) : initBeanDefinitions
+
 ## 15강 : test(green) : initBeanDefinitions
 
 ## 14강 : test(red) : initBeanDefinitions

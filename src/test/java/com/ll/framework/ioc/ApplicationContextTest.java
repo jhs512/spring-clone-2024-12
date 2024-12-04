@@ -55,8 +55,6 @@ public class ApplicationContextTest {
     @Test
     @DisplayName("initBeanDefinitions")
     public void t5() {
-        applicationContext.initBeanDefinitions();
-
         Map<String, BeanDefinition> beanDefinitions = applicationContext.getBeanDefinitions();
 
         assertThat(beanDefinitions).isNotEmpty();
