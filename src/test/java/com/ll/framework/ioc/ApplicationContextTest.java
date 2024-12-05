@@ -59,4 +59,12 @@ public class ApplicationContextTest {
 
         assertThat(beanDefinitions).isNotEmpty();
     }
+
+    @Test
+    @DisplayName("initDataAll")
+    public void t6() {
+        ApplicationRunner initDataAll = applicationContext.getBean("initDataAll");
+
+        assertThat(initDataAll).isNotNull();
+    }
 }
