@@ -38,7 +38,13 @@ public class ApplicationContext {
     private void createBean(BeanDefinition beanDefinition) {
         Class<?> cls = beanDefinition.getCls();
 
-        Object bean = cls.newInstance();
+        Object bean = cls.getConstructors()[0].newInstance(
+                beanDefinition
+                        .getParameterNames()
+                        .stream()
+                        .map(this::getBean)
+                        .toArray()
+        );
 
         beans.put(beanDefinition.getName(), bean);
     }

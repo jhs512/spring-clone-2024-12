@@ -1,5 +1,9 @@
 # 작업내역
 
+## 19강 : test(green) : createBean 에서 생성할 객체에게 생성자 매개변수가 있으면 그것부터 생성
+
+## 18강 : test(red) : PostService 가 PostRepository 에 의존하도록 수정
+
 ## 17강 : test(blue) : 리팩토링
 
 ## 16강 : test(blue) : initBeanDefinitions
