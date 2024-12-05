@@ -1,5 +1,7 @@
 # 작업내역
 
+## 21강 : test(green) : @Configuration, @Bean, initDataAll 해결
+
 ## 20강 : test(red) : @Configuration, @Bean, initDataAll
 
 ## 19강 : test(green) : createBean 에서 생성할 객체에게 생성자 매개변수가 있으면 그것부터 생성

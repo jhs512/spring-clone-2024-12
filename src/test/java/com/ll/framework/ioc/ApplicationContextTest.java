@@ -1,7 +1,7 @@
 package com.ll.framework.ioc;
 
 import com.ll.domain.post.post.repository.PostRepository;
-import com.ll.domain.post.post.service.PostService.PostService;
+import com.ll.domain.post.post.service.PostService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
